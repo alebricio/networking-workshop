@@ -6,3 +6,7 @@ RUN apt-get update && \
     apt-get install -y strace netcat-traditional procps && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY socket.py socket.py
