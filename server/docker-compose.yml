@@ -1,8 +1,8 @@
 version: '3'
 services:
   server:
-    build: ./server
-    container_name: netcat_server
+    build: ./
+    container_name: server
     environment:
       PORT: "12345"
     ports:
